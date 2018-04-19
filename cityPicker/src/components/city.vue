@@ -77,8 +77,9 @@
 
         }
         axios.get(
-          'https://m.lvmama.com/api/router/rest.do?method=api.com.home.getStations&version=1.0.0&firstChannel=TOUCH&secondChannel=LVMM'
+          '../../static/cityInfo.json'
         ).then((re) => {
+          console.log(re.data);
           if (re.data.code == '1') {
             var data = re.data.data;
             var list = {};
@@ -93,7 +94,7 @@
             });
             self.provinceList = list;
             self.getLocal(data);
-            self.getLoaclBYBMAP(data, 40.05703033345938, 116.3084202915042);
+            // self.getLoaclBYBMAP(data, 40.05703033345938, 116.3084202915042);
           }
 
         }).catch(function (error) {});

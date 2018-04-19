@@ -205,22 +205,6 @@ ul {
     list-style: none
 }
 
-.guangg {
-    position: relative;
-}
-
-.guangg:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 23px;
-    height: 10px;
-    background: url(//pics.lvjs.com.cn/mobile/img/icons/guangg.png) center;
-    background-size: 100%;
-    display: block;
-}
-
 @keyframes loading {
     from {
         transform: rotate(0deg);
@@ -241,63 +225,6 @@ ul {
         transform: rotate(360deg);
         -webkit-transform: rotate(360deg)
     }
-}
-
-.lv-ld {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 75px;
-    height: 75px;
-    border-radius: 4px;
-    background: rgba(0, 0, 0, .6);
-    color: #fff;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
-    z-index: 9999;
-}
-
-.lv-ld>i.ld-cir,
-.lv-ld>i.ld-bac {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 23px;
-    margin-top: 10px;
-}
-
-.lv-ld>i.ld-cir {
-    background: url(//pics.lvjs.com.cn/mobile/img/loading/loading-circle.png) center center no-repeat;
-    background-size: 29px;
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-animation: loading 1s linear 0s infinite;
-    animation: loading 1s linear 0s infinite
-}
-
-.lv-ld>i.ld-bac {
-    background: url(//pics.lvjs.com.cn/mobile/img/loading/loading-lv.png) center center no-repeat;
-    background-size: 18px;
-}
-
-.lv-ld>span {
-    position: absolute;
-    bottom: 13px;
-    font-size: 14px;
-    left: 11px
-}
-
-.lv-ld.lv-ld-hd {
-    display: none;
-}
-
-.lv-dot {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);
-    -webkit-transform: translate3d(-50%, -50%, 0);
 }
 
 .lv-dot>div {
